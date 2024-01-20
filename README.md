@@ -10,4 +10,4 @@ Responsive webpage design using plan HTML and CSS
 ```
 # How it works
 
-- [live](https://order-food-theta.vercel.app/)
+- [live](https://writeease.vercel.app/)
