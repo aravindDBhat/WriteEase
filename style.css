@@ -60,15 +60,23 @@
   background-color: #00857d;
   border: none;
 }
+.dropdown a {
+  display: inline-flex;
+  justify-content: space-between;
+}
 .navbar .toggle_button {
   margin-top: 40px;
   right: 7rem;
 }
-.toggle_button .img {
+.toggle_button div {
+  margin-right: 30px;
+}
+.toggle_button div .img {
   width: 45px;
   height: 45px;
-  margin-top: -30px;
+  margin-top: 18px;
   border-radius: 50%;
+  margin-left: 7px;
 }
 .toggle_button {
   display: none;
@@ -79,13 +87,12 @@
   transition: 0.6s ease-in-out;
 }
 .dropdown-content {
-  margin-right: -100px;
-  margin-top: 50px;
+  margin-right: 70px;
+  margin-top: 0;
   display: none;
   background-color: white;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1000;
 }
 
 .dropdown-content a {
@@ -578,13 +585,25 @@
   .p2 .usecases {
     grid-template-columns: auto;
   }
+  .navbar {
+    padding: 20px 30px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
   .navbar nav {
     display: none;
   }
-  .toggle_button {
-    display: block;
+  .toggle_button .img2 {
+    width: 240px;
+    height: 75px;
   }
+  .toggle_button {
+    display: flex;
+  }
+
   .dropdown:hover .dropdown-content {
+    position: sticky;
     display: block;
   }
 
@@ -661,11 +680,17 @@
     grid-template-columns: auto auto;
     grid-gap: 30px;
   }
+  .navbar {
+    padding: 20px 30px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
   .navbar nav {
     display: none;
   }
   .toggle_button {
-    display: block;
+    display: flex;
   }
   .dropdown:hover .dropdown-content {
     display: block;
